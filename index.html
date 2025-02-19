@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI BA - Requirement Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>AI BA - Requirement Generator</h1>
+    <form id="promptForm">
+        <label for="prompt">Enter your prompt for ChatGPT:</label>
+        <textarea id="prompt" name="prompt" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="notes">High-Level Notes:</label>
+        <textarea id="notes" name="notes" rows="4" cols="50"></textarea><br><br>
+
+        <label for="figmaLink">Figma Link:</label>
+        <input type="url" id="figmaLink" name="figmaLink"><br><br>
+
+        <button type="submit">Generate Requirements</button>
+    </form>
+
+    <div id="results">
+        <!-- Results from ChatGPT will be displayed here -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
